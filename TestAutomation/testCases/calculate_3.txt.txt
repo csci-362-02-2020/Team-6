@@ -1,0 +1,6 @@
+calculate_3
+DistanceCalculator.java
+Calculate
+Color(0,0,0), Color(0,0,0)
+java /testCasesExecutables/calculate_3.java
+0.0
