@@ -1,6 +1,7 @@
 Test ID
-Test class
-Test method
+Tested class
+Tested method
 method parameters
-Command line 
+Executable Compile
+Executable run with arguments
 Expected outcomes
