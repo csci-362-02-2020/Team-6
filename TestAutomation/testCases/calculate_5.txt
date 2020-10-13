@@ -1,6 +1,7 @@
 calculate_5
-DistanceCalcualtor.java
+DistanceCalculator.java
 Calculate
 Color(200,7,16), Color(57,57,57)
-java /testCasesExecutables/calculate_5.java
-139.77
+javac /testCasesExecutables/calculate.java
+java /testCasesExecutables/calculate 200 7 16 57 57 57
+156.94
