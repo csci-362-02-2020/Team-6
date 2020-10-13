@@ -27,12 +27,12 @@ public final class DistanceCalculator {
     	int[] colorNum = new int[6];
     	for (int i=0;i<6;i++) {
     		colorNum[i] = Integer.parseInt(args[i]);
-		System.out.println(colorNum[i];
+		System.out.println(colorNum[i]);
     	}
     	
     	Color joey = new Color(colorNum[0], colorNum[1], colorNum[2]);
     	Color reid = new Color(colorNum[3], colorNum[4], colorNum[5]);
     	System.out.println(calculate(joey, reid));
-    	System.out.println(Color.orange);
+    	
     }
 }
