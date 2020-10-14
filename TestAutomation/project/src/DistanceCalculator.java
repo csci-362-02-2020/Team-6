@@ -18,7 +18,8 @@
  * Contact us by mail: open-s AT open-s DOT com
  */
 
-package project.src;
+//Only line changed to make work for testing
+ package project.src;
 
 import java.awt.Color;
 
