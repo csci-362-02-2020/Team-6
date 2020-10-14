@@ -18,7 +18,7 @@
  * Contact us by mail: open-s AT open-s DOT com
  */
 
-package org.opens.utils.distancecalculator;
+package project.src;
 
 import java.awt.Color;
 
