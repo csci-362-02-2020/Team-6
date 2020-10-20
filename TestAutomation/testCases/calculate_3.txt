@@ -1,7 +1,5 @@
 calculate_3
 DistanceCalculator.java
-Calculate
-Color(0,0,0), Color(0,0,0)
+calculate(Color(0,0,0), Color(0,0,0))
 java -cp . testcasesexecutables.TestCalculate 0 0 0 0 0 0
 0.0
-

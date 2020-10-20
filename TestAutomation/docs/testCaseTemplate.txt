@@ -1,6 +1,5 @@
 Test ID
 Tested class
-Tested method
-method parameters
+Tested Method and Parameters
 Executable run with arguments
 Expected outcomes
