@@ -1,3 +1,3 @@
 import os
 path=os.getcwd()
-os.system("javac -cp . ../project/src/* ../testcasesexecutables/*")
+os.system("javac -cp . /project/src/* /testcasesexecutables/*")
