@@ -2,6 +2,5 @@ Test ID
 Tested class
 Tested method
 method parameters
-Executable Compile
 Executable run with arguments
 Expected outcomes
