@@ -10,17 +10,9 @@ public class TestCalculate {
     	for (int i=0;i<6;i++) {
     		colorNum[i] = Integer.parseInt(args[i]);
     	}
-    	double expectedOutcome = Double.parseDouble(args[6])
     	
     	Color joey = new Color(colorNum[0], colorNum[1], colorNum[2]);
     	Color reid = new Color(colorNum[3], colorNum[4], colorNum[5]);
-    	double calcValue = DistanceCalculator.calculate(joey, reid);
-    	System.out.println(calcValue);
-    	if (expectedOutcome = calcValue){
-    		System.out.println("Pass");
-    	}
-    	else{]
-    		System.out.println("Fail");
-    	}
+    	System.out.println(DistanceCalculator.calculate(joey, reid));
     }
 }
