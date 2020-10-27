@@ -18,7 +18,6 @@ testDirectory="testCases"
 reportDirectory="reports"
 for root, dirs, files in os.walk(testDirectory):
   for name in files:
-    print(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
     os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
 
 
