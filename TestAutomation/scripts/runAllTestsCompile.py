@@ -13,6 +13,7 @@ def testCaseRead(fileNamePath):
   fName.close()
 
 path=os.getcwd()
+os.system("javac -cp . project/src/* testcasesexecutables/*")
 testDirectory="testCases"
 reportDirectory="reports"
 for root, dirs, files in os.walk(testDirectory):
