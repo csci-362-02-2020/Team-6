@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
 
 public class TestOutput{
     
-    public static void replaceLines(String filename,String newLine) throws IOException{
+    public static void replaceLines(String filename,String newLine){
         /*try {
             StringBuffer inputBuffer = new StringBuffer();
             Scanner sc=new Scanner(TestOutput.class.getResourceAsStream(filename));
@@ -32,10 +32,10 @@ public class TestOutput{
         	BufferedReader file=new BufferedReader(new FileReader(filename));
         	//StringBuffer inputBuffer=new StringBuffer();
         	String line;
-        	String lines;
+        	String lines="";
         	int count=0;
         	while ((line = file.readLine()) != null && count<5) {
-            		lines+=line;
+            		lines+=line+"\n";
             		//inputBuffer.append('\n');
             		count++;
         	}
