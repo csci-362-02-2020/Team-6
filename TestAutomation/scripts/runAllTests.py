@@ -1,5 +1,6 @@
 #Run from inside TestAutomation directory
 import os
+import sys
 
 def commandReturn(fileNamePath):
   fName = open(fileNamePath, 'r')
@@ -12,6 +13,8 @@ def testCaseRead(fileNamePath):
   fName = open(fileNamePath, 'r')
   fName.close()
 
+if(len(sys.argv)==2 and sys.argv[1]=="c"):
+  os.system("javac -cp . project/src/* testcasesexecutables/*")
 path=os.getcwd()
 testDirectory="testCases"
 reportDirectory="reports"
