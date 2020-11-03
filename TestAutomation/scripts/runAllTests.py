@@ -28,7 +28,11 @@ def htmlReport(fileNamePath, reportFile):
       for i in range(1,4):
         rName.write("<p>"+labels[i-1]+testCase[i]+"</p>\n")
       rName.write("<p>"+"<b>Expected Result: </b>"+testCase[4]+"\t"+"<b>Returned Result: </b>"+testCase[5]+"</p>\n")
-      rName.write("<p>"+testCase[6]+"</p>\n")
+      if(testCase[6]=="Pass"):
+        rName.write("<p style=\"color:green\"><b>"+testCase[6]+"</b></p>\n")
+      else:
+        rName.write("<p style=\"color:red\"><b>"+testCase[6]+"</b></p>\n")
+      
   rName.close()
   fName.close()
 
