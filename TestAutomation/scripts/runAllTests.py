@@ -13,14 +13,14 @@ def commandReturn(fileNamePath):
   fName.close()
 
 #This method appends the report for a test case
-def htmlReport(fileNamePath, reportFile):
+def htmlReport(fileNamePath, reportFile,lastModified):
   rName=open(reportFile,'a')
   locked=True
   #A lock is made to ensure the file has been updated
   while locked:
     fName = open(fileNamePath, 'r')
     testCase=fName.readlines()
-    if(len(testCase)!=7):
+    if(len(testCase)!=7 or lastModified>=os.path.getmtime(fileNamePath)):
       fName.close()
       continue
     else:
@@ -53,6 +53,7 @@ rName.close()
 #walks through each test case
 for root, dirs, files in os.walk(testDirectory):
   for name in sorted(files):
+    lastModified=os.path.getmtime(testDirectory+"/"+name)
     os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
-    htmlReport(testDirectory+"/"+name,reportFile)
+    htmlReport(testDirectory+"/"+name,reportFile,lastModified)
 os.system("browse "+reportFile)
