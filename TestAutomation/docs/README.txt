@@ -1,2 +1,5 @@
 Run from inside TestAutomation directory
-python /scripts/runAllTests.py
+To compile Java files:
+    python scripts/runAllTests.py c
+Otherwise:
+    python scripts/runAllTests.py c
