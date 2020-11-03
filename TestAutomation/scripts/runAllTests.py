@@ -35,7 +35,6 @@ def htmlReport(fileNamePath, reportFile,lastModified):
         rName.write("<p style=\"color:green\"><b>"+testCase[6]+"</b></p>\n")
       else:
         rName.write("<p style=\"color:red\"><b>"+testCase[6]+"</b></p>\n")
-      
   rName.close()
   fName.close()
 
