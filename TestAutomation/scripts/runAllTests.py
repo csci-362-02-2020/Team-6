@@ -4,16 +4,19 @@
 import os
 import sys
 
+#This method looks in the test case file and returns the needed command
 def commandReturn(fileNamePath):
   fName = open(fileNamePath, 'r')
   for i,line in enumerate(fName):
     if i==3:
         return line.strip()
   fName.close()
-        
+
+#This method appends the report for a test case
 def htmlReport(fileNamePath, reportFile):
   rName=open(reportFile,'a')
   locked=True
+  #A lock is made to ensure the file has been updated
   while locked:
     fName = open(fileNamePath, 'r')
     testCase=fName.readlines()
@@ -36,17 +39,18 @@ def htmlReport(fileNamePath, reportFile):
   rName.close()
   fName.close()
 
+#compiles java files if parameter is met
 if(len(sys.argv)==2 and sys.argv[1]=="c"):
   os.system("javac -cp . project/src/* testcasesexecutables/*")
 path=os.getcwd()
 testDirectory="testCases"
-
+#initializes html report
 reportDirectory="reports"
 reportFile="reports/testReport.html"
 rName=open(reportFile,'w')
 rName.write("<h1>Tanaguru TestAutomation Results</h1>")
 rName.close()
-
+#walks through each test case
 for root, dirs, files in os.walk(testDirectory):
   for name in sorted(files):
     os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))

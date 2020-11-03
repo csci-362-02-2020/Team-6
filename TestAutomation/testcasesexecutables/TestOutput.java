@@ -3,8 +3,9 @@ import java.io.FileWriter;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+//This class is for writing the results for each test case
 public class TestOutput{
-    
+    //Method only replaces (or adds) the last 2 lines of the testCase file to display results
     public static void replaceLines(String filename,String newLine){
         try{
         	BufferedReader file=new BufferedReader(new FileReader(filename));
