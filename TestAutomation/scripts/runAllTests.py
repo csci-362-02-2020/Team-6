@@ -23,11 +23,11 @@ def htmlReport(fileNamePath, reportFile):
     else:
       locked=False
       rName.write("<h2>"+testCase[0]+"</h2>\n")
-      labels=["Tested class: ","Tested Method and Parameters: ","Command for executable: "]
+      labels=["<b>Tested class: </b>","<b>Tested Method and Parameters: </b>","<b>Command for executable: </b>"]
       testCase[3]+=" "+os.path.abspath(fileNamePath)
       for i in range(1,4):
         rName.write("<p>"+labels[i-1]+testCase[i]+"</p>\n")
-      rName.write("<p>"+"Expected Result: "+testCase[4]+"\t"+"Returned Result: "+testCase[5]+"</p>\n")
+      rName.write("<p>"+"<b>Expected Result: </b>"+testCase[4]+"\t"+"<b>Returned Result: </b>"+testCase[5]+"</p>\n")
       rName.write("<p>"+testCase[6]+"</p>\n")
   rName.close()
   fName.close()
@@ -48,6 +48,3 @@ for root, dirs, files in os.walk(testDirectory):
     os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
     htmlReport(testDirectory+"/"+name,reportFile)
 os.system("browse "+reportFile)
-
-
-    
