@@ -23,9 +23,11 @@ def htmlReport(fileNamePath, reportFile):
     else:
       locked=False
       rName.write("<h2>"+testCase[0]+"</h2>\n")
+      labels=["Tested class: ","Tested Method and Parameters: ","Command for executable: "]
+      testCase[3]+=" "+os.path.abspath(fileNamePath)
       for i in range(1,4):
-        rName.write("<p>"+testCase[i]+"</p>\n")
-      rName.write("<p>"+testCase[4]+"\t"+testCase[5]+"</p>\n")
+        rName.write("<p>"+labels[i-1]+testCase[i]+"</p>\n")
+      rName.write("<p>"+"Expected Result: "+testCase[4]+"\t"+"Returned Result: "+testCase[5]+"</p>\n")
       rName.write("<p>"+testCase[6]+"</p>\n")
   rName.close()
   fName.close()

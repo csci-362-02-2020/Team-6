@@ -1,7 +1,7 @@
 Test ID
 Tested class
 Tested Method and Parameters
-Executable run with arguments
+Command for executable
 Expected outcomes
 Last Result from Running Test
 Success or Fail
