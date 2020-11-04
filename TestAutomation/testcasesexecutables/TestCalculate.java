@@ -17,7 +17,8 @@ public class TestCalculate {
     	
     	Color joey = new Color(colorNum[0], colorNum[1], colorNum[2]);
     	Color reid = new Color(colorNum[3], colorNum[4], colorNum[5]);
-    	double calcValue = DistanceCalculator.calculate(joey, reid);
+	Color stefan = new Color(colorNum[6], colorNum[7], colorNum[8]);
+    	double calcValue = DistanceCalculator.calculate(joey, reid, stefan);
     	String output=String.valueOf(calcValue)+"\n";
 		
 		if (expectedOutcome == calcValue){
