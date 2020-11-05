@@ -4,7 +4,7 @@ import project.src.DistanceCalculator;
 import testcasesexecutables.TestOutput;
 
 //Class tests the DistanceCalculator class's calculate method
-//Arguments: Color1RedValue Color1GreenValue Color1BlueValue Color2RedValue Color2GreenValue Color2BlueValue ExpectedResult TestCaseFile
+//Arguments: Color1RedValue Color1GreenValue Color1BlueValue Color2RedValue Color2GreenValue Color2BlueValue ExpectedResult TestCaseFilePath
 public class TestCalculate {
 
     public static void main(String[] args) {
