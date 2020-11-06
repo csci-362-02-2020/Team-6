@@ -26,7 +26,6 @@ def htmlReport(fileNamePath, reportFile,lastModified):
     else:
       locked=False
       rName.write("<tr><td>"+testCase[0]+"</td>\n")
-      #labels=["<b>Tested class: </b>","<b>Tested Method and Parameters: </b>","<b>Command for executable: </b>"]
       testCase[3]+=" "+os.path.abspath(fileNamePath)
       for i in range(1,4):
         rName.write("<td>"+testCase[i]+"</td>\n")
