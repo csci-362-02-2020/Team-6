@@ -47,7 +47,6 @@ if(len(sys.argv)==2 and sys.argv[1]=="c"):
 path=os.getcwd()
 testDirectory="testCases"
 #initializes html report
-reportDirectory="reports"
 reportFile="reports/testReport.html"
 rName=open(reportFile,'w')
 rName.write("<head><style>table, th, td {border: 1px solid black;border-collapse: collapse;}</style><style>th, td {padding: 15px;}</style><style>#t01 tr:nth-child(even) {background-color: #eee;}</style><style>#t01 tr:nth-child(odd) {background-color: #fff;}</style><style>#t01 th {color: white;background-color: black;}</style></head>\n")
