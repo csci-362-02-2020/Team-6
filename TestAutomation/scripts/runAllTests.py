@@ -25,18 +25,19 @@ def htmlReport(fileNamePath, reportFile,lastModified):
       continue
     else:
       locked=False
-      rName.write("<h2>"+testCase[0]+"</h2>\n")
-      labels=["<b>Tested class: </b>","<b>Tested Method and Parameters: </b>","<b>Command for executable: </b>"]
+      rName.write("<tr><td>"+testCase[0]+"</td>\n")
+      #labels=["<b>Tested class: </b>","<b>Tested Method and Parameters: </b>","<b>Command for executable: </b>"]
       testCase[3]+=" "+os.path.abspath(fileNamePath)
       for i in range(1,4):
-        rName.write("<p>"+labels[i-1]+testCase[i]+"</p>\n")
-      rName.write("<p>"+"<b>Expected Result: </b>"+testCase[4]+"\t"+"<b>Returned Result: </b>"+testCase[5]+"</p>\n")
+        rName.write("<td>"+testCase[i]+"</td>\n")
+      rName.write("<td>"+testCase[4]+"</td>"+"<td>"+testCase[5]+"</td>\n")
       if(testCase[6]=="Pass"):
-        rName.write("<p style=\"color:green\"><b>"+testCase[6]+"</b></p>\n")
+        rName.write("<td style=\"color:green\"><b>"+testCase[6]+"</b></td>\n")
       else:
-        rName.write("<p style=\"color:red\"><b>"+testCase[6]+"</b></p>\n")
-  rName.close()
-  fName.close()
+        rName.write("<td style=\"color:red\"><b>"+testCase[6]+"</b></td></tr>\n")
+      rName.close()
+      fName.close()
+  
 
 #compiles java files if parameter is met
 if(len(sys.argv)==2 and sys.argv[1]=="c"):
@@ -47,7 +48,8 @@ testDirectory="testCases"
 reportDirectory="reports"
 reportFile="reports/testReport.html"
 rName=open(reportFile,'w')
-rName.write("<h1>Tanaguru TestAutomation Results</h1>")
+rName.write("<head><style>table, th, td {border: 1px solid black;border-collapse: collapse;}</style><style>th, td {padding: 15px;}</style><style>#t01 tr:nth-child(even) {background-color: #eee;}</style><style>#t01 tr:nth-child(odd) {background-color: #fff;}</style><style>#t01 th {color: white;background-color: black;}</style></head>\n")
+rName.write("<h1>Tanaguru TestAutomation Results</h1>\n<table style=\"width:100%\" id=\"t01\"><tr><th>Test ID</th><th>Tested class</th><th>Tested Method and Parameters</th><th>Command for executable</th><th>Expected outcomes</th><th>Last Result from Running Test</th><th>Success or Fail</th></tr>\n")
 rName.close()
 #walks through each test case
 for root, dirs, files in os.walk(testDirectory):
@@ -55,4 +57,7 @@ for root, dirs, files in os.walk(testDirectory):
     lastModified=os.path.getmtime(testDirectory+"/"+name)
     os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
     htmlReport(testDirectory+"/"+name,reportFile,lastModified)
+rName=open(reportFile,'a')
+rName.write("</table>")
+rName.close()
 os.system("browse "+reportFile)
