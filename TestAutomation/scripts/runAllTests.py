@@ -7,10 +7,13 @@ import sys
 #This method looks in the test case file and returns the needed command
 def commandReturn(fileNamePath):
   fName = open(fileNamePath, 'r')
+  command=""
   for i,line in enumerate(fName):
     if i==3:
-        return line.strip()
+        command=line.strip()
   fName.close()
+  command=command.replace("[direct filepath]",os.path.abspath(fileNamePath))
+  return command
 
 #This method appends the report for a test case
 def htmlReport(fileNamePath, reportFile,lastModified):
@@ -25,13 +28,13 @@ def htmlReport(fileNamePath, reportFile,lastModified):
       continue
     else:
       locked=False
-      rName.write("<tr><td>"+testCase[0]+"</td>\n")
-      testCase[3]+=" "+os.path.abspath(fileNamePath)
+      rName.write("<tr><td>"+testCase[0]+"</td>")
+      testCase[3]=testCase[3].replace("[direct filepath]",os.path.abspath(fileNamePath))
       for i in range(1,4):
-        rName.write("<td>"+testCase[i]+"</td>\n")
-      rName.write("<td>"+testCase[4]+"</td>"+"<td>"+testCase[5]+"</td>\n")
+        rName.write("<td>"+testCase[i]+"</td>")
+      rName.write("<td>"+testCase[4]+"</td>"+"<td>"+testCase[5]+"</td>")
       if(testCase[6]=="Pass"):
-        rName.write("<td style=\"color:green\"><b>"+testCase[6]+"</b></td>\n")
+        rName.write("<td style=\"color:green\"><b>"+testCase[6]+"</b></td>")
       else:
         rName.write("<td style=\"color:red\"><b>"+testCase[6]+"</b></td></tr>\n")
       rName.close()
@@ -54,7 +57,7 @@ rName.close()
 for root, dirs, files in os.walk(testDirectory):
   for name in sorted(files):
     lastModified=os.path.getmtime(testDirectory+"/"+name)
-    os.system(commandReturn(testDirectory+"/"+name)+" "+os.path.abspath(testDirectory+"/"+name))
+    os.system(commandReturn(testDirectory+"/"+name))
     htmlReport(testDirectory+"/"+name,reportFile,lastModified)
 rName=open(reportFile,'a')
 rName.write("</table>")
