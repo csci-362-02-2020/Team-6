@@ -4,9 +4,8 @@ import project.src.DistanceCalculator;
 import testcasesexecutables.TestOutput;
 
 //Class tests the DistanceCalculator class's calculate method
-//Arguments: Color1RedValue Color1GreenValue Color1BlueValue Color2RedValue Color2GreenValue Color2BlueValue ExpectedResult TestCaseFilePath
 public class TestCalculate {
-
+	//Arguments: Color1RedValue Color1GreenValue Color1BlueValue Color2RedValue Color2GreenValue Color2BlueValue ExpectedResult TestCaseFilePath
     public static void main(String[] args) {
     	int[] colorNum = new int[6];
     	for (int i=0;i<6;i++) {
@@ -18,8 +17,8 @@ public class TestCalculate {
     	Color joey = new Color(colorNum[0], colorNum[1], colorNum[2]);
     	Color reid = new Color(colorNum[3], colorNum[4], colorNum[5]);
     	double calcValue = DistanceCalculator.calculate(joey, reid);
-    	String output=String.valueOf(calcValue)+"\n";
-		
+		//Test result output
+		String output=String.valueOf(calcValue)+"\n";
 		if (expectedOutcome == calcValue){
     		output+="Pass";
     	}

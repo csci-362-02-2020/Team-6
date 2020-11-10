@@ -1,7 +1,7 @@
 Test ID
 Tested class
 Tested Method and Parameters
-Command for executable
+Command for executable  (If a direct path to the file is needed, use "[direct filepath]")
 Expected outcomes
 Last Result from Running Test
 Success or Fail
