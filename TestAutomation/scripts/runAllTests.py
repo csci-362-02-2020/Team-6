@@ -30,9 +30,9 @@ def htmlReport(fileNamePath, reportFile,lastModified):
         rName.write("<td>"+testCase[i]+"</td>")
       #Adds color depending on pass or fail
       if(testCase[7]=="Pass"):
-        rName.write("<td style=\"color:green\"><b>"+testCase[6]+"</b></td>")
+        rName.write("<td style=\"color:green\"><b>"+testCase[7]+"</b></td>")
       else:
-        rName.write("<td style=\"color:red\"><b>"+testCase[6]+"</b></td></tr>\n")
+        rName.write("<td style=\"color:red\"><b>"+testCase[7]+"</b></td></tr>\n")
       rName.close()
       fName.close()
   
