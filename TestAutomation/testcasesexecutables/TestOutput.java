@@ -15,7 +15,7 @@ public class TestOutput{
         	String lines="";
         	int count=0;
 			//Reads the file through line 5 to keep the data, but not old test results (if any exist)
-			while ((line = file.readLine()) != null && count<5) {
+			while ((line = file.readLine()) != null && count<6) {
             		lines+=line+"\n";
             		count++;
         	}

@@ -1,5 +1,6 @@
 calculate_2
-DistanceCalcualtor.java
+DistanceCalculator.java
 calculate(Color(0,0,0), Color(255,255,255))
-java -cp . testcasesexecutables.TestCalculate 0 0 0 255 255 255 441.67 [direct filepath]
+testcasesexecutables.TestCalculate
+0 0 0 255 255 255
 441.67
