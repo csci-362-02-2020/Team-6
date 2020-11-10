@@ -1,5 +1,5 @@
 calculate_4
-DistanceCalcualtor.java
+DistanceCalculator.java
 calculate(Color(255,200,34),Color(255,255,17))
 testcasesexecutables.TestCalculate
 255 200 34 255 255 17
