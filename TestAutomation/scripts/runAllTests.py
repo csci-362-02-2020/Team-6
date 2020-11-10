@@ -24,13 +24,12 @@ def htmlReport(fileNamePath, reportFile,lastModified):
       continue
     else:
       locked=False
-      rName.write("<tr><td>"+testCase[0]+"</td>")
-      testCase[3]=testCase[3].replace("[direct filepath]",os.path.abspath(fileNamePath))
-      for i in range(1,7):
+      rName.write("<tr>")
+      for i in range(0,7):
         rName.write("<td>"+testCase[i]+"</td>")
       #Adds color depending on pass or fail
       if(testCase[7]=="Pass"):
-        rName.write("<td style=\"color:green\"><b>"+testCase[7]+"</b></td>")
+        rName.write("<td style=\"color:green\"><b>"+testCase[7]+"</b></td></tr>")
       else:
         rName.write("<td style=\"color:red\"><b>"+testCase[7]+"</b></td></tr>\n")
       rName.close()
