@@ -14,9 +14,7 @@ public class TestCalculate {
 		double expectedOutcome = Double.parseDouble(args[6]);
 		String outputFile=args[7];
     	
-    	Color joey = new Color(colorNum[0], colorNum[1], colorNum[2]);
-    	Color reid = new Color(colorNum[3], colorNum[4], colorNum[5]);
-    	double calcValue = DistanceCalculator.calculate(joey, reid);
+    	double calcValue = DistanceCalculator.calculate(new Color(colorNum[0], colorNum[1], colorNum[2]), new Color(colorNum[3], colorNum[4], colorNum[5]));
 		//Test result output
 		String output=String.valueOf(calcValue)+"\n";
 		if (expectedOutcome == calcValue){
