@@ -17,7 +17,7 @@
  *
  * Contact us by mail: open-s AT open-s DOT com
  */
-package org.opens.utils.colorconvertor;
+package project.src;
 
 import java.awt.Color;
 
