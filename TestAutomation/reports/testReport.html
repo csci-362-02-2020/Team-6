@@ -1,0 +1,38 @@
+<head><style>table, th, td {border: 1px solid black;border-collapse: collapse;}</style><style>th, td {padding: 15px;}</style><style>#t01 tr:nth-child(even) {background-color: #eee;}</style><style>#t01 tr:nth-child(odd) {background-color: #fff;}</style><style>#t01 th {color: white;background-color: black;}</style></head>
+<h1>Tanaguru TestAutomation Results</h1>
+<table style="width:100%" id="t01"><tr><th>Test ID</th><th>Tested class</th><th>Tested Method and Parameters</th><th>Command for executable</th><th>Expected outcomes</th><th>Last Result from Running Test</th><th>Success or Fail</th></tr>
+<tr><td>calculate_1
+</td><td>DistanceCalculator.java
+</td><td>calculate(Color(255,255,255), Color(0,0,0))
+</td><td>java -cp . testcasesexecutables.TestCalculate 255 255 255 0 0 0 441.67 /media/sf_VMStuff/CSCI362/CSCI362Proj/Team-6/TestAutomation/testCases/calculate_1.txt
+</td><td>441.67
+</td><td>367.77
+</td><td style="color:red"><b>Fail</b></td></tr>
+<tr><td>calculate_2
+</td><td>DistanceCalcualtor.java
+</td><td>calculate(Color(0,0,0), Color(255,255,255))
+</td><td>java -cp . testcasesexecutables.TestCalculate 0 0 0 255 255 255 441.67 /media/sf_VMStuff/CSCI362/CSCI362Proj/Team-6/TestAutomation/testCases/calculate_2.txt
+</td><td>441.67
+</td><td>367.77
+</td><td style="color:red"><b>Fail</b></td></tr>
+<tr><td>calculate_3
+</td><td>DistanceCalculator.java
+</td><td>calculate(Color(0,0,0), Color(0,0,0))
+</td><td>java -cp . testcasesexecutables.TestCalculate 0 0 0 0 0 0 0.0 /media/sf_VMStuff/CSCI362/CSCI362Proj/Team-6/TestAutomation/testCases/calculate_3.txt
+</td><td>0.0
+</td><td>0.0
+</td><td style="color:green"><b>Pass</b></td><tr><td>calculate_4
+</td><td>DistanceCalcualtor.java
+</td><td>calculate(Color(255,200,34),Color(255,255,17))
+</td><td>java -cp . testcasesexecutables.TestCalculate 255 200 34 255 255 17 57.57 /media/sf_VMStuff/CSCI362/CSCI362Proj/Team-6/TestAutomation/testCases/calculate_4.txt
+</td><td>57.57
+</td><td>54.45
+</td><td style="color:red"><b>Fail</b></td></tr>
+<tr><td>calculate_5
+</td><td>DistanceCalculator.java
+</td><td>calculate(Color(200,7,16),Color(57,57,57))
+</td><td>java -cp . testcasesexecutables.TestCalculate 200 7 16 57 57 57 156.94 /media/sf_VMStuff/CSCI362/CSCI362Proj/Team-6/TestAutomation/testCases/calculate_5.txt
+</td><td>156.94
+</td><td>139.77
+</td><td style="color:red"><b>Fail</b></td></tr>
+</table>
