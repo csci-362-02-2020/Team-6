@@ -17,7 +17,8 @@
  *
  * Contact us by mail: open-s AT open-s DOT com
  */
-package project.src;
+//Changed For TestAutomation
+ package project.src;
 
 import java.awt.Color;
 

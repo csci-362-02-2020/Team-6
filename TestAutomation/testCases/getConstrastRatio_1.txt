@@ -1,0 +1,6 @@
+getConstrastRatio_1.txt
+ContrastChecker.java
+getConstrastRatio(Color(0,0,0),Color(0,0,0))
+testcasesexecutables.TestGetConstrastRatio
+0 0 0 0 0 0
+1
