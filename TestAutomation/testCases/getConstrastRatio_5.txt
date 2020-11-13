@@ -1,0 +1,6 @@
+getConstrastRatio_5
+ContrastChecker.java
+getConstrastRatio(Color(187,5,190),Color(68,106,159))
+testcasesexecutables.TestGetConstrastRatio
+187 5 190 68 106 159
+1.0184255955300985
