@@ -1,0 +1,8 @@
+getHue_2
+colorConverter.java
+getHue(Color(200,255,0)
+testcasesexecutables.TestGetHue
+200 255 0
+73.0
+72.94118
+Fail

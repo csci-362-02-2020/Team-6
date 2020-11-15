@@ -4,3 +4,5 @@ calculate(Color(0,0,0), Color(0,0,0))
 testcasesexecutables.TestCalculate
 0 0 0 0 0 0
 0.0
+0.0
+Pass
