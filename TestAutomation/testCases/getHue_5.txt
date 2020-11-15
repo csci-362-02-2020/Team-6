@@ -3,6 +3,6 @@ colorConverter.java
 getHue(Color(2,0,241)
 testcasesexecutables.TestGetHue
 2 0 241
-240.0
+240.49792
 240.49792
 Fail
