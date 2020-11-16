@@ -4,5 +4,3 @@ calculate(Color(200,7,16),Color(57,57,57))
 testcasesexecutables.TestCalculate
 200 7 16 57 57 57
 156.94
-139.77
-Fail

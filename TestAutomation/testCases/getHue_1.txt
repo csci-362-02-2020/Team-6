@@ -4,5 +4,3 @@ getHue(Color(128,128,0)
 testcasesexecutables.TestGetHue
 128 128 0
 60.0
-60.0
-Pass

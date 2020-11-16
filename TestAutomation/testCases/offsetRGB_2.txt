@@ -4,5 +4,3 @@ offsetRgbColor(Color(0,255,255))
 testcasesexecutables.TestOffsetRGB
 0 255 255 255 -10 -10
 255 245 245
-255 245 245
-Pass
