@@ -14,17 +14,16 @@ public class TestGetHue {
     	Color color1 = new Color(colorNum[0], colorNum[1], colorNum[2]);
     	
     	float expectedOutcome = Float.parseFloat(args[3]);
-	String outputFile=args[4];
+		String outputFile=args[4];
     	float hueValue = ColorConverter.getHue(color1) * 360;
-	//Test result output
-	String output=String.valueOf(hueValue)+"\n";
-	if (expectedOutcome == hueValue){
-    		output+="Pass";
-    	}
-    	else{
-    		output+="Fail";
-	}
-	TestOutput.replaceLines(outputFile,output);
-		
+		//Test result output
+		String output=String.valueOf(hueValue)+"\n";
+		if (expectedOutcome == hueValue){
+				output+="Pass";
+		}
+		else{
+			output+="Fail";
+		}
+		TestOutput.replaceLines(outputFile,output);	
 	}
 }
