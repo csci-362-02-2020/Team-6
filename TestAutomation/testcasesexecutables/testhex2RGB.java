@@ -25,6 +25,5 @@ public class testhex2RGB{
   		output+="Fail";
 	}
 	TestOutput.replaceLines(outputFile,output);
-	//System.out.println(result);
     }
 }
