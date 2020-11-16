@@ -1,6 +1,6 @@
 offsetRGB_5
 ColorConverter.java
 offsetRgbColor(Color(255,245,245))
-testcasesexecutables.TestOffsetRGB
+testcasesexecutables.TestOffsetRGBColor
 255 245 245 -255 -245 -245
 0 0 0

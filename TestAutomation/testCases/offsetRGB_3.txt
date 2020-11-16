@@ -1,6 +1,6 @@
 offsetRGB_3
 ColorConverter.java
 offsetRgbColor(Color(120, 120, 120))
-testcasesexecutables.TestOffsetRGB
+testcasesexecutables.TestOffsetRGBColor
 120 120 120 60 -60 60
 180 60 180

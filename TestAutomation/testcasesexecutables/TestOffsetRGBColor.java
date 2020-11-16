@@ -3,7 +3,7 @@ import java.awt.Color;
 import project.src.ColorConverter;
 import testcasesexecutables.TestOutput;
 	
-public class TestOffsetRGB {
+public class TestOffsetRGBColor {
 
 	public static void main(String[] args) {
 		int[] colorNum = new int[9];
