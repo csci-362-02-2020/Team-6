@@ -2,7 +2,7 @@ package testcasesexecutables;
 import java.awt.Color;
 import project.src.ColorConverter;
 
-public class testhex2RGB{
+public class TestHex2RGB{
 	//this is the main class used to be testing Tanaguru's hex2RBG where
 	//@arg: colorStr
 	public static void main(String[] args){

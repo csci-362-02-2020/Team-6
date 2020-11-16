@@ -1,6 +1,6 @@
 rgb2Hex_4
 ColorConverter.java
 rgb2Hex(Color(0,255,255))
-testcasesexecutables.testhex2RGB
+testcasesexecutables.TestHex2RGB
 0 255 255
 00FFFF

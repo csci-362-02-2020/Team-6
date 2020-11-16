@@ -1,6 +1,6 @@
 rgb2Hex_1
 ColorConverter.java
 rgb2Hex(Color(0,1,2))
-testcasesexecutables.testhex2RGB
+testcasesexecutables.TestHex2RGB
 0 1 2
 000102
