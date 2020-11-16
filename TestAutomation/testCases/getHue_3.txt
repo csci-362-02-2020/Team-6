@@ -1,8 +1,8 @@
 getHue_3
-colorConverter.java
+ColorConverter.java
 getHue(Color(45,50,255)
 testcasesexecutables.TestGetHue
 45 50 255
 238.57144
 238.57144
-Fail
+Pass
