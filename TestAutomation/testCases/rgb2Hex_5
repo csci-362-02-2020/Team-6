@@ -1,0 +1,6 @@
+rgb2Hex_5
+ColorConverter.java
+rgb2Hex(Color(255,255,255))
+testcasesexecutables.testhex2RGB
+255 255 255
+FFFFFF
