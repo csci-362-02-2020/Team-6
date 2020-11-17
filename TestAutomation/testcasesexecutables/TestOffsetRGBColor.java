@@ -18,7 +18,7 @@ public class TestOffsetRGBColor {
 		String outputFile=args[9];
 		//changes the Color color1 by the offset amounts set in the test case
 	   	color1 = ColorConverter.offsetRgbColor(color1, colorNum[3], colorNum[4], colorNum[5]);
-	   	stores the results of the offset in an integer array
+	   	//stores the results of the offset in an integer array
 	   	int[] result = new int[]{color1.getRed(), color1.getGreen(), color1.getBlue()};
 		//Test result output to HTML
 		String output=String.valueOf(color1.getRed()+" "+color1.getGreen()+" "+color1.getBlue())+"\n";
