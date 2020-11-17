@@ -1,6 +1,6 @@
 getHue_2
 ColorConverter.java
-getHue(Color(0,0,0)
+getHue(Color(0,0,0))
 testcasesexecutables.TestGetHue
 0 0 0
 0.0

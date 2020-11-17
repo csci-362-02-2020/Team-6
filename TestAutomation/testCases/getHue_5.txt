@@ -1,6 +1,6 @@
 getHue_5
 ColorConverter.java
-getHue(Color(2,0,241)
+getHue(Color(2,0,241))
 testcasesexecutables.TestGetHue
 2 0 241
 240.49792
