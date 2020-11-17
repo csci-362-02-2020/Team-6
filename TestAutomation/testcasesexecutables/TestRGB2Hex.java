@@ -1,10 +1,12 @@
 package testcasesexecutables;
 import java.awt.Color;
 import project.src.ColorConverter;
+
 //this is the TestRGB2Hex class:
+//This class tests the rgb2Hex method from the ColorConverter class
 public class TestRGB2Hex{
 	//this is the main class used to be testing Tanaguru's rgb2Hex where
-	//@arg: colorStr
+	//Arguments: ColorRedValue ColorGreenValue ColorBlueValue ExpectedResult TestCaseFilePath
 	public static void main(String[] args){
 	int[] colorNum = new int[3];
   	for (int i=0;i<3;i++) {

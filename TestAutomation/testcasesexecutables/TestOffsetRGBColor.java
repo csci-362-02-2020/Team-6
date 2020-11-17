@@ -2,9 +2,10 @@ package testcasesexecutables;
 import java.awt.Color;
 import project.src.ColorConverter;
 import testcasesexecutables.TestOutput;
-	
-public class TestOffsetRGBColor {
 
+//Class tests the offsetRgbColor method from the ColorConverter class
+public class TestOffsetRGBColor {
+	//Arguments: ColorRedValue ColorGreenValue ColorBlueValue RedOffset GreenOffset BlueOffset ExpectedRed ExpectedGreen ExpectedBlue TestCaseFilePath
 	public static void main(String[] args) {
 		int[] colorNum = new int[9];
 		//takes the String parameters and turns them into ints and stores them in an array

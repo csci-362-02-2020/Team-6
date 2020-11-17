@@ -3,8 +3,9 @@ import java.awt.Color;
 import project.src.ColorConverter;
 import testcasesexecutables.TestOutput;
 
+//Class tests the getHue method from the ColorConverter class
 public class TestGetHue {
-	
+	//Arguments: ColorRedValue ColorGreenValue ColorBlueValue ExpectedResult TestCaseFilePath
 	public static void main(String[] args) {
 		int[] colorNum = new int[3];
 		//turns the string arguments into integers in an array
