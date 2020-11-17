@@ -1,6 +1,12 @@
+#Reid Foster, Joe Mezera, Stefan Veloff
+#runAllTests.py
+#CSCI362 testing framework for Tanaguru Contrast Finder
+#11/17/2020
+
 #Run from inside TestAutomation directory
 #Command for compiling: python scripts/runAllTests.py c
 #Otherwise: python scripts/runAllTests.py
+
 import os
 import sys
 
@@ -48,6 +54,7 @@ rName=open(reportFile,'w')
 rName.write("<head><style>table, th, td {border: 1px solid black;border-collapse: collapse;}</style><style>th, td {padding: 15px;}</style><style>#t01 tr:nth-child(even) {background-color: #eee;}</style><style>#t01 tr:nth-child(odd) {background-color: #fff;}</style><style>#t01 th {color: white;background-color: black;}</style></head>\n")
 rName.write("<h1>Tanaguru TestAutomation Results</h1>\n<table style=\"width:100%\" id=\"t01\"><tr><th>Test ID</th><th>Tested class</th><th>Tested Method and Parameters</th><th>Driver</th><th>Arguments</th><th>Expected outcomes</th><th>Last Result from Running Test</th><th>Success or Fail</th></tr>\n")
 rName.close()
+
 #walks through each test case
 for root, dirs, files in os.walk(testDirectory):
   for name in sorted(files):
