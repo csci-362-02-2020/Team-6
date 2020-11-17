@@ -1,0 +1,6 @@
+rgb2Hex_2
+ColorConverter.java
+rgb2Hex(Color(128,128,12))
+testcasesexecutables.TestRGB2Hex
+128 128 12
+80800C
