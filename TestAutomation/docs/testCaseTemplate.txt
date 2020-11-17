@@ -4,5 +4,5 @@ Tested Method and Parameters
 Test Case Driver
 Arguments
 Expected outcomes
-Last Result from Running Test
+Last Result from Running Test (These last two lines only appear if the tests have been run before)
 Success or Fail
