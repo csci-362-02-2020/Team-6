@@ -11,7 +11,7 @@ public class TestOffsetRGBColor {
 	   	for (int i=0;i<colorNum.length;i++) {
 	    	colorNum[i] = Integer.parseInt(args[i]);
 	   	}
-	    	//creates the color to be changed
+	    //creates the color to be changed
 	   	Color color1 = new Color(colorNum[0], colorNum[1], colorNum[2]);
 	   	//adds the expected outcome results to an integer array
 	   	int[] expectedOutcome = new int[]{colorNum[6], colorNum[7], colorNum[8]};
