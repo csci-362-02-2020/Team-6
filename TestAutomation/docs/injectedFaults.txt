@@ -1,0 +1,3 @@
+ContrastChecker.java: getConstrastRatio()
+    replace "if (fgLuminosity > bgLuminosity) {" with "if (fgLuminosity < bgLuminosity) {"
+    changes greater than sign to less than, the intended returned ratio is larger/smaller this changes it to smaller/larger

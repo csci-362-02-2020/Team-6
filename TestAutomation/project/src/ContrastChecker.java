@@ -90,6 +90,8 @@ public final class ContrastChecker {
         double fgLuminosity = getLuminosity(fgColor);
         double bgLuminosity = getLuminosity(bgColor);
         if (fgLuminosity > bgLuminosity) {
+        //fault: replace previous line
+        //if (fgLuminosity < bgLuminosity) {
             return computeContrast(fgLuminosity, bgLuminosity);
         } else {
             return computeContrast(bgLuminosity, fgLuminosity);
