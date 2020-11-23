@@ -1,3 +1,8 @@
 ContrastChecker.java: getConstrastRatio()
     replace "if (fgLuminosity > bgLuminosity) {" with "if (fgLuminosity < bgLuminosity) {"
-    changes greater than sign to less than, the intended returned ratio is larger/smaller this changes it to smaller/larger
+    changes greater than sign to less than, the intended returned ratio is larger/smaller this changes it to smaller/larger.
+    
+ColorConverter.java: TestRGB2Hex()
+    replace result = result.substring(1, result.length()); to result = result.substring(0,result.length());
+    this will not return the correct expectedOutcome because # is the notation for the beginning of a hex value. This has 
+    difficulty with the compareTo() method.
