@@ -41,11 +41,45 @@ def htmlReport(fileNamePath, reportFile,lastModified):
         rName.write("<td style=\"color:red\"><b>"+testCase[7]+"</b></td></tr>\n")
       rName.close()
       fName.close()
-  
+
+#This method compiles the required java files
+#If passed True, will delete and recompile current class files
+def compileFiles(recompile=False):
+  compdict=dict()
+  testdict=dict()
+  for root,dirs,files in os.walk("project/src"):
+    for name in files:
+      if ".class" in name:
+        if recompile is False:
+          compdict[name.replace(".class",".java")]=True
+        else:
+          os.remove("project/src/"+name)
+      else:
+        if name not in compdict:
+          compdict[name]=False
+  for key in compdict:
+    if compdict[key] is False:
+      os.system("javac -cp . project/src/"+key)
+  for root,dirs,files in os.walk("testcasesexecutables"):
+    for name in files:
+      if ".class" in name:
+        if recompile is False:
+          testdict[name.replace(".class",".java")]=True
+        else:
+          os.remove("testcasesexecutables/"+name)
+      else:
+        if name not in testdict:
+          testdict[name]=False
+  for key in testdict:
+    if testdict[key] is False:
+      os.system("javac -cp . testcasesexecutables/"+key)
 
 #compiles java files if c argument is passed
 if(len(sys.argv)==2 and sys.argv[1]=="c"):
-  os.system("javac -cp . project/src/* testcasesexecutables/*")
+  compileFiles(True)
+else:
+  compileFiles()
+
 #Variable names are used to allow alteration to system structure
 testDirectory="testCases"
 #initializes html report
