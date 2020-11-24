@@ -3,10 +3,9 @@ ContrastChecker.java: getConstrastRatio()
     changes greater than sign to less than, the intended returned ratio is larger/smaller this changes it to smaller/larger.
     simply comment out the original line and then uncomment the fault
     
-ColorConverter.java: TestRGB2Hex()
-    replace result = result.substring(1, result.length()); to result = result.substring(0,result.length());
-    this will not return the correct expectedOutcome because # is the notation for the beginning of a hex value. This has 
-    difficulty with the compareTo() method.
+ColorConverter.java: rgb2Hex()
+    replace the return statement with the faulty one that switches the order of the colors
+    comment out the original and uncomment the fault
 
 DistanceCalculator.java: calculate()
     for this "fault," the code is altered to actually give the correct result as per the euclidean distance formula
