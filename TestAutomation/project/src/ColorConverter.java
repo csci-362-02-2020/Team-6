@@ -120,7 +120,7 @@ public final class ColorConverter {
     public static Color offsetRgbColor(Color bgColor, int offsetRed, int offsetGreen, int offsetBlue) {
         return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);
        //replace line above to inject fault, adds incorrect offsets to the values, also corrects for values above 255 
-       //return new Color((bgColor.getRed() + offsetGreen)%256, (bgColor.getGreen() + offsetBlue)%256, (bgColor.getBlue() + offsetRed)%256);
+       //return new Color((bgColor.getBlue() + offsetBlue)%256, (bgColor.getGreen() + offsetGreen)%256, (bgColor.getBlue() + offsetBlue)%256);
        
     }
 
