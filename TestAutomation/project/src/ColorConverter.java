@@ -103,7 +103,7 @@ public final class ColorConverter {
         float[] hsbValues = new float[MAX_COMPONENT];
         Float hue;
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
-        //replace lower line with line above to inject fault
+        //replace previous line with below fault 
         //Color.RGBtoHSB(color.getRed(), color.getBlue(), color.getGreen(), hsbValues);
         hue = hsbValues[HUE];
         return hue;
@@ -119,8 +119,8 @@ public final class ColorConverter {
      */
     public static Color offsetRgbColor(Color bgColor, int offsetRed, int offsetGreen, int offsetBlue) {
         return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);
-       //replace with line above to inject fault, adds the red offset to all colors, also corrects for values above 255 
-       //return new Color((bgColor.getBlue() + offsetBlue)%256, (bgColor.getGreen() + offsetGreen)%256, (bgColor.getBlue() + offsetBlue)%256);
+       //replace line above to inject fault, adds incorrect offsets to the values, also corrects for values above 255 
+       //return new Color((bgColor.getRed() + offsetGreen)%256, (bgColor.getGreen() + offsetBlue)%256, (bgColor.getBlue() + offsetRed)%256);
        
     }
 

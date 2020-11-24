@@ -17,5 +17,5 @@ ColorConverter.java: getHue()
 	Comment out the original and uncomment the fault
 	
 ColorConverter.java: offsetRgbColor()
-	replace the return statement "return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);" with "return new Color((bgColor.getBlue() + offsetBlue)%256, (bgColor.getGreen() + offsetGreen)%256, (bgColor.getBlue() + offsetBlue)%256);"
-	It changes the red value of rgb to blue which changes the outcome of the color in most cases. It also checks to see if the added values goes above 255 and wraps it which could alter the color. 
+	replace the return statement "return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);" with "return new Color((bgColor.getRed() + offsetGreen)%256, (bgColor.getGreen() + offsetBlue)%256, (bgColor.getBlue() + offsetRed)%256);"
+	It changes which offsets are added to which color value. It also checks to see if the added values goes above 255 and wraps it which could alter the color. 
