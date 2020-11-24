@@ -1,3 +1,5 @@
+When injecting faults, use the "c" parameter so that the script recompiles the Java files.
+
 ContrastChecker.java: getConstrastRatio()
     Original line: if (fgLuminosity > bgLuminosity) {
     Fault: if (fgLuminosity < bgLuminosity) {
