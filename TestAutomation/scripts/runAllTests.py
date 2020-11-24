@@ -1,6 +1,6 @@
 #Reid Foster, Joe Mezera, Stefan Veloff
 #runAllTests.py
-#CSCI362 testing framework for Tanaguru Contrast Finder
+#CSCI362, testing framework for Tanaguru Contrast Finder
 #11/17/2020
 
 #Run from inside TestAutomation directory

@@ -10,3 +10,12 @@ ColorConverter.java: rgb2Hex()
 DistanceCalculator.java: calculate()
     for this "fault," the code is altered to actually give the correct result as per the euclidean distance formula
     to implement this change, comment out the original return statement and uncomment the "fault"/fix
+    
+ColorConverter.java: getHue()
+	replace "Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);" with "Color.RGBtoHSB(color.getRed(), color.getBlue(), color.getGreen(), hsbValues);
+	It changes the order of the RGB values to potentially return incorrect values.
+	Comment out the original and uncomment the fault
+	
+ColorConverter.java: offsetRgbColor()
+	replace the return statement "return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);" with "return new Color((bgColor.getBlue() + offsetBlue)%256, (bgColor.getGreen() + offsetGreen)%256, (bgColor.getBlue() + offsetBlue)%256);"
+	It changes the red value of rgb to blue which changes the outcome of the color in most cases. It also checks to see if the added values goes above 255 and wraps it which could alter the color. 
