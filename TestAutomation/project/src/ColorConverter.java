@@ -187,6 +187,8 @@ public final class ColorConverter {
      * @return 
      */
     public static String rgb2Hex(Color color) {
+     //fault: replace return statement to return (String.format("#%02x%02x", color.getRed(), color.getBlue())).toUpperCase();
+     //this changes the format of the hex value and will not give the correct value.
         return (String.format("#%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue())).toUpperCase();
     }
 
