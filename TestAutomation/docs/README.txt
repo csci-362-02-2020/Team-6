@@ -7,3 +7,6 @@ The python script will run through the testCases directory, running each.  At th
 The script will compile any Java files not currently compiled automatically.  To delete the class files and recompile the Java files, add the "c" parameter.
 
 To see the injected faults and how to implement them, view the injectedFaults.txt file
+
+Drivers must be java files that take arguments in this format: TestMethodArguments ExpectedResults TestCaseFilePath
+This is the information the script will recover from the test case files and how they are passed along.
