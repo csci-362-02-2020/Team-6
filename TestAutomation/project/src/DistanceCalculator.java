@@ -43,7 +43,7 @@ public final class DistanceCalculator {
         return (double) Math.round(Math.abs((Math.cbrt(Math.pow(Double.valueOf(colorToChange.getRed()) - Double.valueOf(colorToKeep.getRed()), CUBIC)
                 + Math.pow(Double.valueOf(colorToChange.getGreen()) - Double.valueOf(colorToKeep.getGreen()), CUBIC)
                 + Math.pow(Double.valueOf(colorToChange.getBlue()) - Double.valueOf(colorToKeep.getBlue()), CUBIC)))) * ROUND_VALUE) / ROUND_VALUE;
-        //"fault": changes the return statement so that the correct value is given instead of the incorrect formula given here
+        //"fault": changes the return statement so that the correct value by using the correct form of the Euclidean Formula
         /*return (double) Math.round(Math.abs((Math.sqrt(Math.pow(Double.valueOf(colorToChange.getRed()) - Double.valueOf(colorToKeep.getRed()), 2)
                 + Math.pow(Double.valueOf(colorToChange.getGreen()) - Double.valueOf(colorToKeep.getGreen()), 2)
                 + Math.pow(Double.valueOf(colorToChange.getBlue()) - Double.valueOf(colorToKeep.getBlue()), 2)))) * ROUND_VALUE) / ROUND_VALUE;

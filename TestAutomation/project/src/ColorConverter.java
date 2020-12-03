@@ -104,6 +104,7 @@ public final class ColorConverter {
         Float hue;
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
         //replace previous line with below fault 
+        //Changes the order of the RGB values in the calculation
         //Color.RGBtoHSB(color.getRed(), color.getBlue(), color.getGreen(), hsbValues);
         hue = hsbValues[HUE];
         return hue;
